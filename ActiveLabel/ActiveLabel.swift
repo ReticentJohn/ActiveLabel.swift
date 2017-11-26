@@ -275,8 +275,7 @@ typealias ElementTuple = (range: NSRange, element: ActiveElement, type: ActiveTy
 
         if parseText {
             clearActiveElements()
-            let newString = parseTextAndExtractActiveElements(mutAttrString)
-            mutAttrString.mutableString.setString(newString)
+            let _ = parseTextAndExtractActiveElements(mutAttrString)
         }
 
         addLinkAttribute(mutAttrString)
